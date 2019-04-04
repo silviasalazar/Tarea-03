@@ -5,6 +5,19 @@
 ### Clase Base
 Una clase base es aquella que no dependen ninguno de sus atributos u objetos de la clase de alguna otra clase, se podría decir que en términos de herencia, seria la clase padre, la clase que se mantiene fija, en el aspecto de herencia.
 Es también por así llamarlo la clase principal de un programa, seria la clase primaria sin incluir la clase main en donde se corre todo el programa en si.
+Las clases pueden heredar de otra clase. Para conseguir esto, se coloca un signo de dos puntos después del nombre de la clase al declarar la clase y se denomina la clase de la cual se hereda (la clase base) después del signo de dos puntos, del modo siguiente:
+
+```csharp
+public class A
+{
+    public A() { }
+}
+ 
+public class B : A
+{
+    public B() { }
+}
+```
 
 ### Clase Derivada
 Son clases que dependen de las clases bases, ya que algunos de sus métodos son también heredados, y muchas veces, el compilador arrojara  malos resultados, ya que al ser dependientes estas clases, a veces podrán generar errores lógicos.
@@ -27,17 +40,25 @@ Antes de definir lo que es una herencia simple y una múltiple vamos a definir e
 Por ejemplo: Si declaramos una clase párrafo derivada de un clase texto todos los métodos y variables asociadas con la clase texto son automáticamente heredados por la subclase párrafo.
 
 ### Herencia simple
+Herencia simple, esta es la herencia más útil y típica., la que se puede encontrar en cualquier lenguaje moderno como Java o C#. La herencia simple, consiste en que una clase puede heredar la implementación de una sola clase base. 
+
 La herencia simple consiste en cuando una clase, hereda a una clase hijo, y a solo una le hereda sus atributos, es igual al concepto general de herencia, con la limitante de solo poder heredar de una clase padre a una clase hijo, y solo a una clase hijo.
 
 ### Herencia múltiple 
 Consiste en la utilización de las propiedades de una clase a varias clases mas, lo que significa que en esta propiedad una sola clase padre puede heredarle atributos, u objetos de esta a varias clases hijo sin ninguna limitación entre ellas.
+
 ![alt text](https://www.glosarioit.com/GloImg/Herencia.PNG)
 
-En la herencia múltiple aparecen ambigüedades, como en el ejemplo de encima: si la clase Músico heredaba de Persona y Trabajador, y la clase Trabajador heredaba de Persona. Existirían las siguientes reglas::
-
+En la herencia múltiple aparecen ambigüedades, como en el ejemplo de encima: si la clase Músico heredaba de Persona y Trabajador, y la clase Trabajador heredaba de Persona. Existirían las siguientes reglas:
+```csharp
 MusicoEstudiante : Persona, Músico, Trabajador
+```
+```csharp
 Músico : Persona, Trabajador
+```
+```csharp
 Trabajador: Persona
+```
 Si un compilador está mirando la clase MusicoEstudiante necesita saber si debe juntar las características iguales o si deben estar separadas. Por ejemplo, tendría sentido unir las características "Edad" de Persona para MusicoEstudiante. La edad de una persona no cambia si le consideras una Persona, un Trabajador o un Músico. Sin embargo, tendría sentido separar la característica "Nombre" de Persona y Músico si los músicos usan un nombre artístico diferente de su nombre real. Las opciones de juntar y separar son válidas según el contexto, y sólo el programador sabe qué opción es correcta para la clase que está diseñando.
 
 ***Cada lenguaje de programación trata estos problemas de herencia repetida de diferente forma:***
@@ -271,6 +292,12 @@ namespace tarea2figuras
   La palabra :base explicado de manera resumida es aquella que llama a la clase principal o también conocida como clase padre, para que de esta manera pueda dar un estado inicial a los objetos.
   
   ![alt text](http://2.bp.blogspot.com/-dijqSc9D2AE/UhFf-wgOhXI/AAAAAAAAADc/wv01wowYyIo/s1600/H3.jpg)
+  
+La palabra clave base se utiliza para obtener acceso a los miembros de la clase base desde una clase derivada:
+
+- Realice una llamada a un método de la clase base reemplazada por otro método.
+
+- Especifique a qué constructor de la clase base se debe llamar para crear instancias de la clase derivada.
 
   
   
