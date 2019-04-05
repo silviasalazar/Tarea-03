@@ -38,9 +38,16 @@ La clase base es "Figura" y sus clases derivadas son "Circulo" y "Rectangulo".
 
 Claro que al definir la clase base como figura sabemos que puede ser cualquier otra figura también asi como rombo, elipce, triangulo, pentágono, etc. 
 
+Otro ejemplo sería el siguiente:
+![alt text](https://sites.google.com/site/contenidospoo/jerarquia.jpg)
+
+En este podemos observar que la clase base es "Vehiculo" pero como ya sabemos hay muchos tipos de vehículos y sus clases derivadas ya especifican que tipo de vehículo es.
+
+
 ## 4. ¿Que es herencia simple y herencia múltiple? ¿En c# se puede hacer herencia múltiple?
 Antes de definir lo que es una herencia simple y una múltiple vamos a definir el concepto de lo que es una herencia en general.
 **Herencia** Es una propiedad que permite que los objetos sean creados a partir de otros ya existentes, obteniendo características (métodos y atributos) similares a los ya existentes. Es la relación entre una clase general y otra clase mas especifica. Es un mecanismo que nos permite crear clases derivadas a partir de clase base, Nos permite compartir automáticamente métodos y datos entre clases subclases y objetos.
+
 
 Por ejemplo: Si declaramos una clase párrafo derivada de un clase texto todos los métodos y variables asociadas con la clase texto son automáticamente heredados por la subclase párrafo.
 
