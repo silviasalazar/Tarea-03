@@ -30,8 +30,12 @@ Como ya habia mencionado anteriormente la clase base es también conocida como l
 
 En esta la clase base es Figura, la cual es la clase principal y las clases son algunas figuras en especifico las cuales heredaran de ella.
 ## 2.  Haz un diagrama UML donde se muestre la relación de herencia entre las  clases Figura, Recangulo y Circulo como vimos en clase.
-![alt text]()
+![Uml](./Descargas/Uml.jpg)
 ## 3. Indica cuales son las clases base y las derivadas.
+Como ya habia mos mencionado anteriormente la clase base es la clase de la cual se hereda, esta muchas veces es conocida como clase "padre" y sus hijas o hijos son las clases que derivan de él, en este caso "clases derivadas".
+La clase base es "Figura" y sus clases derivadas son "Circulo" y "Rectangulo". 
+
+Claro que al definir la clase base como figura sabemos que puede ser cualquier otra figura también asi como rombo, elipce, triangulo, pentágono, etc. 
 
 ## 4. ¿Que es herencia simple y herencia múltiple? ¿En c# se puede hacer herencia múltiple?
 Antes de definir lo que es una herencia simple y una múltiple vamos a definir el concepto de lo que es una herencia en general.
