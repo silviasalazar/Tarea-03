@@ -29,6 +29,18 @@ Como ya habia mencionado anteriormente la clase base es también conocida como l
 ![alt text](http://www.sc.ehu.es/sbweb/fisica/cursoJava/fundamentos/herencia/herencia1.gif)
 
 En esta la clase base es Figura, la cual es la clase principal y las clases son algunas figuras en especifico las cuales heredaran de ella.
+
+Un punto importante dentro de este tema y es el polimorfismo, pero...¿Qué es exactamente el polimorfismo?
+La forma de usar el polimorfismo es a través de referencias a la **clase base**. El polimorfismo se puede representar con un array de elementos que se refieren a objetos de diferentes tipos, como sugiere Meyer. Para poder utilizar polimorfismo en Java se deben seguir las siguientes reglas: 
+
+1. Crear una jerarquía de clases con las operaciones importantes definidas por los métodos miembro declarados como abstractos en la clase base. 
+
+2. Las implementaciones específicas de los métodos abstractos se deben hacer en las clases derivadas. Cada clase derivada puede tener su propia versión del método. Por ejemplo, la implementación del método añadir() varía de un tipo de archivo a otro. 
+
+3. Las instancias de estas clases se manejan a través de una referencia a la clase base. Este mecanismo es la ligadura dinámica, que es la esencia del polimorfismo en Java. Realmente, no es necesario declarar los métodos en la clase base como abstractos, si después se redefinen en la clase derivada.
+
+Una de las principales ventajas del polimorfismo es la especialización de clases derivadas.
+
 ## 2.  Haz un diagrama UML donde se muestre la relación de herencia entre las  clases Figura, Recangulo y Circulo como vimos en clase.
 ![alt text](./Imagenes/UML.jpeg)
 
