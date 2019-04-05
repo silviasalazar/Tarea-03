@@ -138,6 +138,7 @@ namespace tarea2figuras
     class Circulo : Figura
     {
      private int radio;
+     //Sobrecargado e implementación de la palabra clave base
      public Circulo(Vector2D pos, int radio):base(pos)
      {
          this.radio= radio;
@@ -155,7 +156,7 @@ namespace tarea2figuras
  
     class Rectangulo : Figura
     {
-     
+     //Implementación de la palabra clave base
      public Rectangulo(Vector2D pos):base(pos)
      {
          
@@ -218,7 +219,8 @@ namespace tarea2figuras
      {
         
      }
-
+        
+        //Dibuja implementado como virtual
      public virtual void Dibuja() 
      {
          Console.WriteLine("Se dibuja un rombo en {0} de color {1}", position, fill);
@@ -228,7 +230,7 @@ namespace tarea2figuras
 
      class Elipse : Figura
     {
-     
+    //Implementación de la palabra clave base
      public Elipse(Vector2D pos):base(pos)
      {
          
@@ -265,7 +267,8 @@ namespace tarea2figuras
 
      class Hexagono : Figura
     {
-     
+    
+    //Implementación de la palabra clave base 
      public Hexagono(Vector2D pos):base(pos)
      {
          
